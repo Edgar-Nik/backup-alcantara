@@ -216,7 +216,7 @@
     top: 15rem;
     right: 2rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+    padding: 3rem;
     border-radius: .5rem;
     -moz-border-radius: .5rem;
     -webkit-border-radius: .5rem;
@@ -257,7 +257,8 @@
 .checkout-date {
     margin-top: 0.4rem;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.28rem;
+    line-height: 2rem;
 }
 .checkout-date-num {
     color: #35a65b;
@@ -342,6 +343,9 @@
     }
     .checkout-price {
         font-size: 1rem;
+    }
+    .product-list{
+        margin-top: 26rem !important;
     }
     .product-list-single{
         width: 100%;
