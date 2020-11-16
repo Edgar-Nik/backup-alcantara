@@ -587,6 +587,7 @@ body {
   font-weight: bold;
   font-size: 1.1rem;
   white-space: nowrap;
+  color: #ff6d00;
 }
 .price-tag {
   margin-left: 0.5rem;
@@ -1459,4 +1460,5 @@ footer {
  }
 
   /*testing orders end*/
+  
 }

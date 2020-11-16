@@ -265,7 +265,7 @@
     font-weight: normal;
 }
 .proceed-btn {
-    margin-top: 1rem;
+    margin-top: 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -294,7 +294,6 @@
     font-size: 1rem;
 }
 .agreement {
-    margin-bottom: 1.5rem;
     display: flex;
     font-size: 1rem;
 }
