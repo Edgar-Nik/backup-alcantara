@@ -1,0 +1,282 @@
+.profil-menu{
+    width: 100%;
+    background: #efefef;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    overflow: hidden;
+}
+.profil-menu a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profil-menu-sections{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.profil-menu-sections>div{
+  
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 1rem;
+}
+.profil-menu-sections>div:hover{
+    background: #dfdfdf;
+}
+.menu-item-icon{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.menu-item-icon>img{
+    width: 100%;
+    height: 100%;
+}
+.exit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 9rem;
+    cursor: pointer;
+}
+.exit-button:hover{
+    background: #dfdfdf;
+
+}
+.exit-button form{
+    width: 100%;
+    height: 100%;
+}
+.exit-btn{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background: transparent;
+  
+
+}
+.my-profil{
+    margin-top: 4rem;
+    width: 100%;
+
+}
+.my-profil-card{
+    width: 36rem;
+    display: flex;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 30%);
+    border-radius: 2rem;
+    -moz-border-radius:2rem ;
+    -webkit-border-radius:2rem;
+    padding: 4rem 1rem;
+    position: relative;
+}
+.my-profil-pic{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    -moz-border-radius:50% ;
+    -webkit-border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a5a5b8;
+    margin-right: 2rem;
+}
+.my-profil-pic>img{
+    width: 70%;
+    height: 70%;
+}
+.profil-user-name{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+}
+.user-profil-phone,
+.profil-mail{
+    font-size: 1.11rem;
+    margin-bottom: .5rem;
+}
+.edit-btn{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    top:1.5rem;
+    right: 1.5rem;
+}
+.edit-btn>img{
+    width: 100%;
+    height: 100%;
+    
+}
+.profil-edit-form-inner{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+.profil-edit-form-inner input{
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    background: #d3d3d3;
+    height: 3rem;
+    margin-top: .6rem;
+    margin-bottom: 1.2rem;
+}
+.profil-edit-form-inner input:focus{
+    background: #ececec;
+}
+.my-profil-edit-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    display: none;
+    
+}
+.profil-edit-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 17;
+    width: 100%;
+    height: 100%;
+    background:#000;
+    opacity: 20%;
+}
+.profil-edit-form{
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    z-index: 20;
+    background: #fff;
+    width: 40rem;
+    opacity: 1;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.profil-edit-close-btn{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.profil-edit-close-btn>img{
+    width: 100%;
+    height: 100%;
+}
+.profil-edit-close-btn:hover{
+    transform:scale(.9);
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+}
+.profil-edit-form-inner button{
+    outline: none;
+    cursor: pointer;
+    border: none;
+    height: 3rem;
+    background: #35a65b;
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.my-history{
+    width: 80%;
+   margin: 3rem auto 5rem auto;
+    display:flex;
+    flex-wrap: wrap;
+}
+.product{
+    margin: 1rem;
+}
+@media screen and (max-width: 500px) {
+    .profil-menu-sections>div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0;
+        padding:.5rem;
+    }
+    .menu-item-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: .5rem;
+    }
+    .profil-menu {
+        margin-top: 2rem;
+        font-size: .8rem;
+    }
+    .exit-button{
+        width: auto;
+        margin-right: 1rem;
+
+    }
+    .my-profil-card {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 1rem;
+
+    }
+    .my-profil-pic{
+        margin: 0 0 2rem 0;
+    }
+    .profil-edit-form {
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        height: 100%;
+    }
+    .profil-edit-form-inner{
+        font-size: .9rem;
+    }
+    .my-profil {
+        margin-top: 2.3rem;
+        width: 100%;
+    }
+
+    .profil-edit-form-inner input{
+        font-size: .9rem;
+    }
+    .profil-edit-close-btn {
+       
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+  
+}

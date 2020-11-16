@@ -1,0 +1,11 @@
+.product{
+    margin: .9rem;
+}
+.container{
+    width: 99%;
+}
+@media screen and (max-width: 500px) {
+    .product{
+        margin: .2rem;
+    }
+}

@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcantara</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/products.css" />
+
+    <link rel="icon" href="./imgs/logo.svg" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  </head>
+  <body>
+    <div class="user-login">
+      <div class="user-login-bg"></div>
+      <div class="user-login-form-wrapper">
+        <div class="popup-close-times">
+          <img src="./imgs/times-black.svg" alt="" />
+        </div>
+        <div class="user-form-toggle">
+          <div class="user-form-toggle-inner">
+            <div class="user-from-toggle-bg"></div>
+            <div class="login-page active-form-page">Մուտք</div>
+            <div class="registr-page">Գրանցվել</div>
+          </div>
+        </div>
+        <form class="user-login-form active-login-form" action="">
+          <div class="email-section">
+            <label for="emailField">E-mail</label>
+            <input
+              type="email"
+              id="emailField"
+              class="form-input"
+              name="userEmail"
+              placeholder="Email"
+            />
+          </div>
+          <div class="pass-section">
+            <label for="passField">Գաղտնաբառ</label>
+            <input
+              class="form-input"
+              type="password"
+              id="passField"
+              name="userPassword"
+              placeholder="Password"
+            />
+          </div>
+          <div class="stay-section">
+            <input id="stayIn" name="stayIn" type="checkbox" checked />
+            <label for="stayIn">Մնալ ցանցում</label>
+          </div>
+          <div class="enter-btn-block">
+            <button class="enter-btn" type="submit">Մուտք</button>
+          </div>
+        </form>
+        <form class="user-registr-form" action="">
+          <div class="email-section">
+            <label for="emailFieldReg">E-mail</label>
+            <input
+              type="email"
+              id="emailFieldReg"
+              class="form-input"
+              name="userEmailReg"
+              placeholder="Email"
+            />
+          </div>
+          <div class="pass-section">
+            <label for="passFieldReg">Գաղտնաբառ</label>
+            <input
+              class="form-input"
+              type="password"
+              id="passFieldReg"
+              name="userPasswordReg"
+              placeholder="Password"
+            />
+
+            <label for="passFieldRep">Կրկնել գաղտնաբառը</label>
+            <input
+              type="password"
+              id="passFieldRep"
+              name="userPasswordRepeat"
+              class="form-input"
+              placeholder="Password"
+            />
+          </div>
+          <div class="registr-btn-block">
+            <button class="registr-btn" type="submit">Գրանցվել</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="main-nav-bg"></div>
+    <div id="main-nav" class="main-nav">
+      <div id="nav-close-btn" class="main-nav-close">
+        <img src="./imgs/times.svg" alt="" />
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/female.svg" alt="" />
+          </div>
+          <p>Կանանց</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/male.svg" alt="" />
+          </div>
+          <p>Տղամարդկանց</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/baby.svg" alt="" />
+          </div>
+          <p>Երեխաներին</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/access.svg" alt="" />
+          </div>
+          <p>Պարագաներ</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/electronics.svg" alt="" />
+          </div>
+          <p>Էլեկտրոնիկա</p>
+        </a>
+      </div>
+    </div>
+    <div class="mobile-header">
+      <div class="mobile-header-top">
+        <div id="mobileMenuBtn" class="mobile-header-item mobile-menu-btn">
+          <img src="./imgs/mobile/menu.svg" alt="" />
+        </div>
+        <a href="./index.html">
+          <div class="mobile-header-item">
+            <img src="./imgs/mobile/home.svg" alt="" />
+          </div>
+        </a>
+        <!-- <a  href="#">
+                <div class="mobile-header-item">
+                    <img src="./imgs/mobile/user.svg" alt="">
+                </div>
+              </a> -->
+        <div id="mobileLogin" class="mobile-header-item login-btn">
+          <img src="./imgs/mobile/user.svg" alt="" />
+        </div>
+        <a href="./liked-items.html">
+          <div class="mobile-header-item">
+            <img src="./imgs/mobile/heart.svg" alt="" />
+          </div>
+        </a>
+
+        <a href="./cart-page.html">
+          <div class="mobile-header-item">
+            <img src="./imgs/mobile/cart.svg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="mobile-header-bottom">
+        <div class="mobile-logo">
+          <div class="mobile-logo-inner">
+            <img src="./imgs/mobile/ALCANTARA.svg" alt="" />
+          </div>
+        </div>
+        <div class="mobile-search-block">
+          <form class="mobile-search-form" action="">
+            <div class="mobile-search-wrap">
+              <input type="text" placeholder="Որոնել" />
+              <button type="submit">
+                <img src="./imgs/mobile/Search.svg" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="products-filter-header">
+        <div id="mobileSortbyBtn" class="mobile-sortby-btn">
+          <div class="mobile-sortby-icon">
+            <img src="./imgs/mobile/Group40.svg" alt="" />
+          </div>
+          <p>Տեսակավորել</p>
+          <div id="sortByDropdown" class="sortByDropdown">
+            <button class="sort-by-btn" type="submit">գնի էժանից թանկ</button>
+            <button class="sort-by-btn" type="submit">գնի թանկից թժան</button>
+            <button class="sort-by-btn" type="submit">թարմացման</button>
+          </div>
+        </div>
+        <div id="filterBtn" class="mobile-filter-btn">
+          <div class="mobile-filter-icon">
+            <img src="./imgs/mobile/Icon-awesome-filter.svg" alt="" />
+          </div>
+          <p>Ֆիլտր</p>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-wrapper">
+          <div id="menu" class="menu">
+            <img src="./imgs/menu.svg" alt="" />
+          </div>
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./imgs/logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="search-block">
+          <form class="search-form" action="">
+            <input
+              class="searchInput"
+              name="searchInput"
+              type="text"
+              placeholder="Որոնել..."
+              id="search"
+            />
+            <button name="searchBtn" class="search-btn" type="submit">
+              <img src="./imgs/map-search.svg" alt="" />
+            </button>
+            <!-- <div id="mic" class="mic"><img src="./imgs/microphone+icon-1320183704865921193.svg" alt=""></div> -->
+
+            <!-- <input id="file" name="file" type="file">
+                    <label class="file-fake" for="file">
+                        <img src="./imgs/material-photo-camera.svg" alt="">
+                    </label> -->
+          </form>
+        </div>
+        <div class="header-items">
+          <a href="./liked-items.html" class="header-item liked">
+            <div class="header-item-pic">
+              <img src="./imgs/heart.svg" alt="" />
+            </div>
+            <p>Նախընտրելի</p>
+            <div class="liked-items-prev">1</div>
+          </a>
+          <a href="cart-page.html" class="header-item cart">
+            <div class="header-item-pic">
+              <img src="./imgs/cart.svg" alt="" />
+            </div>
+            <p>Զամբյուղ</p>
+            <div class="cart-items-prev">2</div>
+          </a>
+          <div id="login-btn" class="header-item user">
+            <div class="header-item-pic">
+              <img src="./imgs/user.svg" alt="" />
+            </div>
+            <p>Մուտք</p>
+          </div>
+          <!-- <a href="/#/profil" class="header-item user">
+                        <div class="header-item-pic">
+                            <img src="./imgs/user.svg" alt="" />
+                        </div>
+                        <p>Պրոֆիլ</p>
+                    </a> -->
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="products-top-section">
+        <div class="pp-prod-links">
+          <a href="./index.html">Գլխավոր</a>
+          <a href="./products.html">Տղամարդկանց </a>
+          <a href="./products.html">Հագուստ</a>
+        </div>
+      </div>
+      <div class="products-container-inner">
+        <div id="products-container-left" class="products-container-left">
+          <form action="">
+            <div class="products-category-heading">
+              <p>Հագուստ</p>
+            </div>
+            <div class="product-categories-text">
+              <p class="categories-heading">կատեգորիաները</p>
+              <ul class="categories-list">
+                <li>
+                  <a href="./products.html"><p>Հագուստ</p></a>
+                </li>
+                <li>
+                  <a href="./products.html"><p>Կոշիկ</p></a>
+                </li>
+                <li>
+                  <a href="./products.html"><p>Ներքնազգեստ</p></a>
+                </li>
+                <li>
+                  <a href="./products.html"><p>Հագուստ տան համար</p></a>
+                </li>
+                <li>
+                  <a href="./products.html"><p>Լողափային նորաձևություն</p></a>
+                </li>
+                <li>
+                  <a href="./products.html"><p>Հարսանիք</p></a>
+                </li>
+              </ul>
+              <div id="categorySlider" class="categories-list-mobile">
+                <div class="category-item-mobile">
+                  <a href="./products.html"><p>Հագուստ</p></a>
+                </div>
+                <div class="category-item-mobile">
+                  <a href="./products.html"><p>Կոշիկ</p></a>
+                </div>
+                <div class="category-item-mobile">
+                  <a href="./products.html"><p>Ներքնազգեստ</p></a>
+                </div>
+                <div class="category-item-mobile">
+                  <a href="./products.html"><p>Լողափային նորաձևություն</p></a>
+                </div>
+                <div class="category-item-mobile">
+                  <a href="./products.html"><p>Հարսանիք</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="price-range">
+              <p class="price-range-heading">Գինը</p>
+              <div class="price-range-labels">
+                <div class="price-range-labels-inner">
+                  <label for="from">Ից</label>
+                  <input
+                    id="from"
+                    type="number"
+                    placeholder="0"
+                    max="99999999"
+                  />
+                </div>
+                <div class="price-range-labels-inner">
+                  <label for="to">մինչ</label>
+                  <input
+                    id="to"
+                    type="number"
+                    placeholder="1000000"
+                    max="99999999"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="colors">
+              <div class="colors-heading">
+                <p>Գույն</p>
+              </div>
+              <div class="colors-wrapper">
+                <input id="red" type="checkbox" />
+                <label for="red" style="background: red"></label>
+                <input id="blue" type="checkbox" />
+                <label for="blue" style="background: blue"></label>
+                <input id="green" type="checkbox" />
+                <label for="green" style="background: green"></label>
+                <input id="yellow" type="checkbox" />
+                <label for="yellow" style="background: yellow"></label>
+                <input id="black" type="checkbox" />
+                <label for="black" style="background: black"></label>
+                <input id="white" type="checkbox" />
+                <label for="white" style="background: white"></label>
+                <input id="gold" type="checkbox" />
+                <label for="gold" style="background: gold"></label>
+              </div>
+            </div>
+            <div class="sizes">
+              <div class="sizes-hading">
+                <p>Չափը</p>
+              </div>
+              <ul class="sizes-wrapper">
+                <li>
+                  <input id="32" type="checkbox" />
+                  <label for="32">32</label>
+                </li>
+                <li>
+                  <input id="33" type="checkbox" />
+                  <label for="33">33</label>
+                </li>
+                <li>
+                  <input id="34" type="checkbox" />
+                  <label for="34">34</label>
+                </li>
+                <li>
+                  <input id="35" type="checkbox" />
+                  <label for="35">35</label>
+                </li>
+                <li>
+                  <input id="36" type="checkbox" />
+                  <label for="36">36</label>
+                </li>
+                <li>
+                  <input id="37" type="checkbox" />
+                  <label for="37">37</label>
+                </li>
+                <li>
+                  <input id="38" type="checkbox" />
+                  <label for="38">38</label>
+                </li>
+                <li>
+                  <input id="39" type="checkbox" />
+                  <label for="39">39</label>
+                </li>
+              </ul>
+            </div>
+            <button class="show-results">Ցույց տալ</button>
+          </form>
+        </div>
+        <div class="products-container-right">
+          <form action="" class="sort-by">
+            <p class="sort-by-heading">Տեսակավորել ըստ:</p>
+            <button class="sort-by-btn" type="submit">գնի էժանից թանկ</button>
+            <button class="sort-by-btn" type="submit">գնի թանկից էժան</button>
+            <button class="sort-by-btn" type="submit">թարմացման</button>
+          </form>
+          <div class="products-main-container">
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/11991530-1.jpg" alt="" />
+                  <img src="./imgs/products/13362963-1.jpg" alt="" />
+                  <img src="./imgs/products/14523020-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">18950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">24520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">LACOSTE POLO</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/13362963-1.jpg" alt="" />
+                  <img src="./imgs/products/14523020-1.jpg" alt="" />
+                  <img
+                    src="./imgs/products/b_t55_001_Front_Black_large.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">18950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">24520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">LACOSTE POLO</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/14523020-1.jpg" alt="" />
+                  <img src="./imgs/products/14839197-1.jpg" alt="" />
+                  <img src="./imgs/products/14523020-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">352000</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price"></p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">Apple Watch 5 Series</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  
+                  <img src="./imgs/products/6484960-1.jpg" alt="" />
+                  <img src="./imgs/products/14523020-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">8950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">14520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">Snickers minis</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/15139980-2.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">8950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">14520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">Dolce Gabanna Shoes</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/5184923-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">4850</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price"></p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">Gucci Beauty</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/15139980-2.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">18950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">24520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">LACOSTE POLO</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/6484960-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">958900</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price"></p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">Samsung Curved Monitor</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/8156132-1.jpg" alt="" />
+                  <img src="./imgs/products/6484960-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">18950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">24520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">LACOSTE POLO</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/9659528-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">18950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">24520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">LACOSTE POLO</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/11991530-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">18950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">24520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">LACOSTE POLO</p>
+                </div>
+              </a>
+            </div>
+            <div class="product">
+              <div class="hide-like-block">
+                <button class="item-like-btn">
+                  <img src="./imgs/heart.svg" alt="" />
+                </button>
+                <button class="item-cart-btn mobile-addcart-btn">
+                  <img src="./imgs/cart.svg" alt="" />
+                </button>
+              </div>
+              <a href="./product-page.html">
+                <div class="product-img">
+                  <img src="./imgs/products/14523034-1.jpg" alt="" />
+                </div>
+
+                <div class="product-price">
+                  <p class="product-main-price">
+                    <span class="main-price-digit">18950</span
+                    ><span class="price-tag">AMD</span>
+                  </p>
+                  <p class="product-old-price">24520</p>
+                </div>
+                <div class="product-description">
+                  <p class="product-description-text">LACOSTE POLO</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--container end-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./imgs/logo.svg" alt="" />
+        </div>
+        <div class="footer-container-inner">
+          <div class="footer-follow-us">
+            <p>Հետևեք մեզ</p>
+            <div class="footer-follow-logos">
+              <a
+                href="https://www.facebook.com/Alcantara-Online-Shop-113615977091634"
+                ><div class="footer-follow-logo">
+                  <img src="./imgs/facebook-square.svg" alt="" /></div
+              ></a>
+              <a href="https://www.instagram.com/alcantaraonlineshop/"
+                ><div class="footer-follow-logo">
+                  <img src="./imgs/instagram.svg" alt="" /></div
+              ></a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>
+              2004-2020 © Alcantara.am - հագուստի, կոշիկի և աքսեսուարների նորաձև
+              առցանց խանութ: Բոլոր իրավունքները պաշտպանված են. Առաքում ողջ
+              հայաստանյան տարածքում: Համատեղելիության ստուգում
+            </p>
+          </div>
+          <div class="footer-contacts">
+            <p>Հետադարձ կապ</p>
+            <a href="tel:+37433710720"
+              ><div class="footer-tel">
+                <img src="./imgs/phone-call.svg" alt="" />
+                <p>+374 33 710-720</p>
+              </div></a
+            >
+            <a href="mailto:Alcantara@gmail.com"
+              ><div class="footer-mail">
+                <img src="./imgs/simple-email.svg" alt="" />
+                <p>Alcantara@gmail.com</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="visa-block">
+        <div class="visa-pic"><img src="./imgs/visa.svg" alt="" /></div>
+      </div>
+      <div class="mobile-footer-inner">
+        <div class="mobile-footer-block">
+          <a href="#">Մեր մասին</a>
+        </div>
+        <div class="mobile-footer-block">
+          <a href="#">Պամաններ եվ դրւթներ</a>
+        </div>
+        <div class="mobile-footer-block">
+          <a href="#">Վերադարձի պամաններ</a>
+        </div>
+        <div class="mobile-footer-contacts">
+          <div class="mobile-footer-contact">
+            <a href="tel:+37433710720"
+              ><div class="footer-tel">
+                <img src="./imgs/mobile/Icon-phone-call.svg" alt="" />
+                <p>+374 33 710-720</p>
+              </div></a
+            >
+          </div>
+          <div class="mobile-footer-contact">
+            <a href="mailto:Alcantara@gmail.com"
+              ><div class="footer-mail">
+                <img src="./imgs/mobile/simple-email.svg" alt="" />
+                <p>Alcantara@gmail.com</p>
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="mobile-footer-social-media">
+          <a
+            href="https://www.facebook.com/Alcantara-Online-Shop-113615977091634"
+            ><div class="footer-follow-logo">
+              <img src="./imgs/mobile/ionic-logo-facebook.svg" alt="" /></div
+          ></a>
+          <a href="https://www.instagram.com/alcantaraonlineshop/"
+            ><div class="footer-follow-logo">
+              <img src="./imgs/mobile/feather-instagram.svg" alt="" /></div
+          ></a>
+        </div>
+        <div class="mobile-footer-visa">
+          <div class="mobile-footer-visa-ico">
+            <img src="./imgs/mobile/Icon-awesome-cc-visa.svg" alt="" />
+          </div>
+          <div class="mobile-footer-visa-ico">
+            <img src="./imgs/mobile/Icon-awesome-cc-mastercard.svg" alt="" />
+          </div>
+        </div>
+        <div class="mobile-footer-lang">
+          <p>Հայ</p>
+          <p>Рус</p>
+          <p>Eng</p>
+        </div>
+        <div class="mobile-footer-copyright">
+          <div class="mobile-copyright-ico">
+            <img src="./imgs/mobile/Group39.svg" alt="" />
+          </div>
+          <p>2020 Alcantara. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script src="./js/products.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

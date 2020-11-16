@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16">
+  <g id="Group_40" data-name="Group 40" transform="translate(-19 -106)">
+    <path id="Icon_awesome-arrows-alt-v" data-name="Icon awesome-arrows-alt-v" d="M5.712,11.811H4.666V4.189H5.712c.485,0,.729-.808.385-1.28L4.143.22a.448.448,0,0,0-.771,0L1.419,2.909c-.343.472-.1,1.28.385,1.28H2.85v7.621H1.8c-.485,0-.729.808-.385,1.28L3.373,15.78a.448.448,0,0,0,.771,0L6.1,13.091c.343-.472.1-1.28-.385-1.28Z" transform="translate(17.742 106)" fill="#fff"/>
+    <rect id="Rectangle_17" data-name="Rectangle 17" width="12" height="2" transform="translate(26 107)" fill="#fff"/>
+    <rect id="Rectangle_18" data-name="Rectangle 18" width="9" height="2" transform="translate(26 113)" fill="#fff"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" width="5" height="2" transform="translate(26 119)" fill="#fff"/>
+  </g>
+</svg>

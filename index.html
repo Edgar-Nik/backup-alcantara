@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alcantara</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./imgs/logo.svg" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  </head>
+  <body>
+    <div class="user-login">
+      <div class="user-login-bg"></div>
+      <div class="user-login-form-wrapper">
+        <div class="popup-close-times">
+          <img src="./imgs/times-black.svg" alt="" />
+        </div>
+        <div class="user-form-toggle">
+          <div class="user-form-toggle-inner">
+            <div class="user-from-toggle-bg"></div>
+            <div class="login-page active-form-page">Մուտք</div>
+            <div class="registr-page">Գրանցվել</div>
+          </div>
+        </div>
+        <form class="user-login-form active-login-form" action="">
+          <div class="email-section">
+            <label for="emailField">E-mail</label>
+            <input
+              type="email"
+              id="emailField"
+              class="form-input"
+              name="userEmail"
+              placeholder="Email"
+            />
+          </div>
+          <div class="pass-section">
+            <label for="passField">Գաղտնաբառ</label>
+            <input
+              class="form-input"
+              type="password"
+              id="passField"
+              name="userPassword"
+              placeholder="Password"
+            />
+          </div>
+          <div class="stay-section">
+            <input id="stayIn" name="stayIn" type="checkbox" checked />
+            <label for="stayIn">Մնալ ցանցում</label>
+          </div>
+          <div class="enter-btn-block">
+            <button class="enter-btn" type="submit">Մուտք</button>
+          </div>
+        </form>
+        <form class="user-registr-form" action="">
+          <div class="email-section">
+            <label for="emailFieldReg">E-mail</label>
+            <input
+              type="email"
+              id="emailFieldReg"
+              class="form-input"
+              name="userEmailReg"
+              placeholder="Email"
+            />
+          </div>
+          <div class="pass-section">
+            <label for="passFieldReg">Գաղտնաբառ</label>
+            <input
+              class="form-input"
+              type="password"
+              id="passFieldReg"
+              name="userPasswordReg"
+              placeholder="Password"
+            />
+
+            <label for="passFieldRep">Կրկնել գաղտնաբառը</label>
+            <input
+              type="password"
+              id="passFieldRep"
+              name="userPasswordRepeat"
+              class="form-input"
+              placeholder="Password"
+            />
+          </div>
+          <div class="registr-btn-block">
+            <button class="registr-btn" type="submit">Գրանցվել</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="main-nav-bg"></div>
+    <div id="main-nav" class="main-nav">
+      <div id="nav-close-btn" class="main-nav-close">
+        <img src="./imgs/times.svg" alt="" />
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/female.svg" alt="" />
+          </div>
+          <p>Կանանց</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/male.svg" alt="" />
+          </div>
+          <p>Տղամարդկանց</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/baby.svg" alt="" />
+          </div>
+          <p>Երեխաներին</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/access.svg" alt="" />
+          </div>
+          <p>Պարագաներ</p>
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="./products.html">
+          <div class="nav-item-ico">
+            <img src="./imgs/nav-icons/electronics.svg" alt="" />
+          </div>
+          <p>Էլեկտրոնիկա</p>
+        </a>
+      </div>
+    </div>
+    <div class="mobile-header">
+      <div class="mobile-header-top">
+        <div id="mobileMenuBtn" class="mobile-header-item mobile-menu-btn">
+          <img src="./imgs/mobile/menu.svg" alt="" />
+        </div>
+        <a href="./index.html">
+          <div class="mobile-header-item">
+            <img src="./imgs/mobile/home.svg" alt="" />
+          </div>
+        </a>
+        <!-- <a  href="#">
+                <div class="mobile-header-item">
+                    <img src="./imgs/mobile/user.svg" alt="">
+                </div>
+              </a> -->
+        <div id="mobileLogin" class="mobile-header-item login-btn">
+          <img src="./imgs/mobile/user.svg" alt="" />
+        </div>
+        <a href="./liked-items.html">
+          <div class="mobile-header-item">
+            <img src="./imgs/mobile/heart.svg" alt="" />
+          </div>
+        </a>
+
+        <a href="./cart-page.html">
+          <div class="mobile-header-item">
+            <img src="./imgs/mobile/cart.svg" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="mobile-header-bottom">
+        <div class="mobile-logo">
+          <div class="mobile-logo-inner">
+            <img src="./imgs/mobile/ALCANTARA.svg" alt="" />
+          </div>
+        </div>
+        <div class="mobile-search-block">
+          <form class="mobile-search-form" action="">
+            <div class="mobile-search-wrap">
+              <input type="text" placeholder="Որոնել" />
+              <button type="submit">
+                <img src="./imgs/mobile/Search.svg" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-wrapper">
+          <div id="menu" class="menu">
+            <img src="./imgs/menu.svg" alt="" />
+          </div>
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./imgs/logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="search-block">
+          <form class="search-form" action="">
+            <input
+              class="searchInput"
+              name="searchInput"
+              type="text"
+              placeholder="Որոնել..."
+              id="search"
+            />
+            <button name="searchBtn" class="search-btn" type="submit">
+              <img src="./imgs/map-search.svg" alt="" />
+            </button>
+            <!-- <div id="mic" class="mic">
+                            <img
+                                src="./imgs/microphone+icon-1320183704865921193.svg"
+                                alt=""
+                            />
+                        </div> -->
+
+            <!-- <input id="file" name="file" type="file">
+                    <label class="file-fake" for="file">
+                        <img src="./imgs/material-photo-camera.svg" alt="">
+                    </label> -->
+          </form>
+        </div>
+        <div class="header-items">
+          <a href="./liked-items.html" class="header-item liked">
+            <div class="header-item-pic">
+              <img src="./imgs/heart.svg" alt="" />
+            </div>
+            <p>Նախընտրելի</p>
+            <div class="liked-items-prev">1</div>
+          </a>
+          <a href="cart-page.html" class="header-item cart">
+            <div class="header-item-pic">
+              <img src="./imgs/cart.svg" alt="" />
+            </div>
+            <p>Զամբյուղ</p>
+            <div class="cart-items-prev">2</div>
+          </a>
+          <div id="login-btn" class="header-item user">
+            <div class="header-item-pic">
+              <img src="./imgs/user.svg" alt="" />
+            </div>
+            <p>Մուտք</p>
+          </div>
+          <!-- <a href="/#/profil" class="header-item user">
+                        <div class="header-item-pic">
+                            <img src="./imgs/user.svg" alt="" />
+                        </div>
+                        <p>Պրոֆիլ</p>
+                    </a> -->
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="top-section">
+        <div class="top-section-inner">
+          <a href="tel:+37433710720"
+            ><span class="call-us">Զանգահարեք մեզ</span> +374 33 710-720
+          </a>
+          <div class="top-section-lang-wrapper">
+            <div class="top-section-lang">
+              <p>AM</p>
+              <img src="./imgs/dropdown.svg" alt="" />
+            </div>
+            <div class="language-drop">
+              <p>Հայ</p>
+              <p>Рус</p>
+              <p>Eng</p>
+            </div>
+          </div>
+
+          <div class="top-section-social-net">
+            <a
+              href="https://www.facebook.com/Alcantara-Online-Shop-113615977091634"
+              ><img src="./imgs/facebook.svg" alt=""
+            /></a>
+            <a href="https://www.instagram.com/alcantaraonlineshop/"
+              ><img src="./imgs/instagram.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="banners">
+        <div id="banner_1" class="banner-item">
+          <a href="#" class="slider-item"
+            ><img src="./imgs/k-edp.svg" alt="" /></a
+          ><a href="#" class="slider-item"
+            ><img src="./imgs/MK_banner.svg" alt="" /></a
+          ><a href="#" class="slider-item"
+            ><img src="./imgs/k-edp.svg" alt=""
+          /></a>
+        </div>
+
+        <div id="banner_2" class="banner-item">
+          <a href="#" class="slider-item"
+            ><img src="./imgs/MK_banner.svg" alt="" /></a
+          ><a href="#" class="slider-item"
+            ><img src="./imgs/k-edp.svg" alt="" /></a
+          ><a href="#" class="slider-item"
+            ><img src="./imgs/MK_banner.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div id="small-banners" class="small-banners">
+        <div class="small-banner">
+          <a class="small-banner-link" href="#">
+            <div class="small-banner-bg"></div>
+            <img src="./imgs/maxresdefault.svg" alt="" />
+          </a>
+        </div>
+        <div class="small-banner">
+          <a class="small-banner-link" href="#">
+            <div class="small-banner-bg"></div>
+            <img src="./imgs/maxresdefault.svg" alt="" />
+          </a>
+        </div>
+        <div class="small-banner">
+          <a class="small-banner-link" href="#">
+            <div class="small-banner-bg"></div>
+            <img src="./imgs/kassety-gillette-mach3-turbo-8-sht.svg" alt=""
+          /></a>
+        </div>
+        <div class="small-banner">
+          <a class="small-banner-link" href="#">
+            <div class="small-banner-bg"></div>
+            <img
+              src="./imgs/philips-light-lounge-baner-pune-lighting-dealers-2ct7zxq2fu.svg"
+              alt=""
+          /></a>
+        </div>
+        <div class="small-banner">
+          <a class="small-banner-link" href="#">
+            <div class="small-banner-bg"></div>
+            <img src="./imgs/fe89b55806a449b9fc4573457996d1ca.svg" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="test-mobile-banners" id="test-mobile-banners">
+        <div class="mobile-banner-item">
+          <a class="mobile-banner-inner" href="#">
+            <div class="mobile-banner-block">
+              <img src="./imgs/banners/maxresdefault.jpg" alt="" />
+            </div>
+          </a>
+          <a class="mobile-banner-inner" href="#">
+            <div class="mobile-banner-block">
+              <img src="./imgs/banners/How-To-Schedule-Auto-Restart-On-Samsung-Galaxy-Note-8-Copy-Copy.jpg" alt=""/>
+            </div>
+          </a>
+        </div>
+        <div class="mobile-banner-item">
+          <a class="mobile-banner-inner" href="#">
+            <div class="mobile-banner-block">
+              <img src="./imgs/banners/jaherpromotion-960x350.jpg" alt="" />
+            </div>
+          </a>
+          <a class="mobile-banner-inner" href="#">
+            <div class="mobile-banner-block">
+              <img src="./imgs/banners/xbox-series-x-tech-inline1.webp" alt=""/>
+            </div>
+          </a>
+        </div>
+        <div class="mobile-banner-item">
+          <a class="mobile-banner-inner" href="#">
+            <div class="mobile-banner-block">
+              <img src="./imgs/banners/maxresdefault.jpg" alt="" />
+            </div>
+          </a>
+          <a class="mobile-banner-inner" href="#">
+            <div class="mobile-banner-block">
+              <img src="./imgs/banners/vegabentley-960x350.jpg" alt=""/>
+            </div>
+          </a>
+        </div>
+        <div class="mobile-banner-item">
+          <a class="mobile-banner-inner" href="#">
+            <div class="mobile-banner-block">
+              <img src="./imgs/fe89b55806a449b9fc4573457996d1ca.svg" alt="" />
+            </div>
+          </a>
+          <a class="mobile-banner-inner" href="#">
+            <div class="mobile-banner-block">
+              <img src="./imgs/philips-light-lounge-baner-pune-lighting-dealers-2ct7zxq2fu.svg" alt=""/>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="mobile-banners-wrapper">
+        <a class="mobile-banner-order  banner-order1" style="order:1" href="#">
+          <div
+            class="mobile-banner"
+            style="
+              background-image: url('./imgs/mobile/3918_1590466062_nikecompressor.svg');
+            "
+          ></div>
+        </a>
+        <a class="mobile-banner-order banner-order2" style="order:2" href="#">
+          <div
+            class="mobile-banner"
+            style="background-image: url('./imgs/mobile/mobbld-1-copy.svg')"
+          ></div>
+        </a>
+        <a class="mobile-banner-order banner-order3" style="order:3" href="#">
+          <div
+            class="mobile-banner"
+            style="background-image: url('./imgs/mobile/Samsung.svg')"
+          ></div>
+        </a>
+        <a class="mobile-banner-order  banner-order4" style="order:4" href="#">
+          <div
+            class="mobile-banner "
+            style="background-image: url('./imgs/mobile/unnamed.svg')"
+          ></div>
+        </a>
+      </div> -->
+      <div class="mobile-homepage-sections">
+        <a href="./products.html">
+          <div class="mobile-prod-section">
+            <div class="mobile-prod-section-img">
+              <img src="./imgs/mobile/female-avatar_96627.svg" alt="" />
+            </div>
+            <p>Կանացի</p>
+          </div>
+        </a>
+        <a href="./products.html">
+          <div class="mobile-prod-section">
+            <div class="mobile-prod-section-img">
+              <img src="./imgs/mobile/account-avatar.svg" alt="" />
+            </div>
+            <p>Տղամարդու</p>
+          </div>
+        </a>
+        <a href="./products.html">
+          <div class="mobile-prod-section">
+            <div class="mobile-prod-section-img">
+              <img src="./imgs/mobile/Baby.svg" alt="" />
+            </div>
+            <p>Մանկական</p>
+          </div>
+        </a>
+        <a href="./products.html">
+          <div class="mobile-prod-section">
+            <div class="mobile-prod-section-img">
+              <img src="./imgs/nav-icons/electronics.svg" alt="" />
+            </div>
+            <p>Էլեկտրոնիկա</p>
+          </div>
+        </a>
+      </div>
+      <div class="home-prod-heading">
+        <p>Վաճառքի հիթեր</p>
+      </div>
+      <div class="products-container">
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img src="./imgs/products/CK1649AZ692_89926_1.jpg" alt="" />
+              <img src="./imgs/products/16026863_1200_A.jpg" alt="" />
+              <img
+                src="./imgs/products/b_t55_001_Front_Black_large.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">8950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">14520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Dolce Gabanna Shoes</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img src="./imgs/products/58493.400.jpg" alt="" />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">4850</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price"></p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Gucci Beauty</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img src="./imgs/products/16026863_1200_A.jpg" alt="" />
+              <img
+                src="./imgs/products/b_t55_001_Front_Black_large.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">18950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">24520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">LACOSTE POLO</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/b_t55_001_Front_Black_large.jpg"
+                alt=""
+              />
+              <img src="./imgs/products/16026863_1200_A.jpg" alt="" />
+              <img
+                src="./imgs/products/b_t55_001_Front_Black_large.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/b_t55_001_Front_Black_large.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">958900</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price"></p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Samsung Curved Monitor</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/bracelet-kit-hull-hoco-or-pink-for-apple-watch-42mm-.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">352000</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price"></p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Apple Watch 5 Series</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/snickers_minis_180g_671536_1.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">8950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">14520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Snickers minis</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/00001-Tommy-Hilfiger-RTW-Spring-2021.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">8950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">14520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Dolce Gabanna Shoes</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img src="./imgs/products/71Yae2A613L._SL1500_.jpg" alt="" />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">4850</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price"></p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Gucci Beauty</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img src="./imgs/products/814Gdegwz8L._SY355_.jpg" alt="" />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">18950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">24520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">LACOSTE POLO</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/3410668dd196a8b7e12c5ca983d387c8de91e6ae_MCSA03038708_BO_K_12_VeroBarista_TIS65621GB_picture_KF1_front_ENG_190219_def-600x600.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/GUEST_379b5d26-9957-4744-a66c-1413d2d8988e.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/3410668dd196a8b7e12c5ca983d387c8de91e6ae_MCSA03038708_BO_K_12_VeroBarista_TIS65621GB_picture_KF1_front_ENG_190219_def-600x600.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/nivea-hand-moisturizing-hand-cream-75ml.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">958900</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price"></p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Samsung Curved Monitor</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img src="./imgs/products/003547059.jpg" alt="" />
+              <img
+                src="./imgs/products/GUEST_379b5d26-9957-4744-a66c-1413d2d8988e.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/GUEST_379b5d26-9957-4744-a66c-1413d2d8988e.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/3410668dd196a8b7e12c5ca983d387c8de91e6ae_MCSA03038708_BO_K_12_VeroBarista_TIS65621GB_picture_KF1_front_ENG_190219_def-600x600.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/nivea-hand-moisturizing-hand-cream-75ml.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">352000</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price"></p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Apple Watch 5 Series</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/36470458a9ca27b00a99a270fca87a2a.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/GUEST_379b5d26-9957-4744-a66c-1413d2d8988e.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/3410668dd196a8b7e12c5ca983d387c8de91e6ae_MCSA03038708_BO_K_12_VeroBarista_TIS65621GB_picture_KF1_front_ENG_190219_def-600x600.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/nivea-hand-moisturizing-hand-cream-75ml.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">8950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">14520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Snickers minis</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/GUEST_379b5d26-9957-4744-a66c-1413d2d8988e.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/3410668dd196a8b7e12c5ca983d387c8de91e6ae_MCSA03038708_BO_K_12_VeroBarista_TIS65621GB_picture_KF1_front_ENG_190219_def-600x600.jpg"
+                alt=""
+              />
+              <img
+                src="./imgs/products/nivea-hand-moisturizing-hand-cream-75ml.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">8950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">14520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Dolce Gabanna Shoes</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img src="./imgs/products/imac-og-202008.jpg" alt="" />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">4850</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price"></p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Gucci Beauty</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/nivea-hand-moisturizing-hand-cream-75ml.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">18950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">24520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">LACOSTE POLO</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img src="./imgs/products/P00300775.jpg" alt="" />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">958900</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price"></p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Samsung Curved Monitor</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/tom-ford-eau-de-parfum-888066000055-black-orchid.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">352000</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">450000</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Apple Watch 5 Series</p>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <div class="hide-like-block">
+            <button class="item-like-btn">
+              <img src="./imgs/heart.svg" alt="" />
+            </button>
+            <button class="item-cart-btn mobile-addcart-btn">
+              <img src="./imgs/cart.svg" alt="" />
+            </button>
+          </div>
+          <a href="./product-page.html">
+            <div class="product-img">
+              <img
+                src="./imgs/products/tommy-hilfiger-james-1791668-11132109.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="product-price">
+              <p class="product-main-price">
+                <span class="main-price-digit">8950</span
+                ><span class="price-tag">AMD</span>
+              </p>
+              <p class="product-old-price">14520</p>
+            </div>
+            <div class="product-description">
+              <p class="product-description-text">Snickers minis</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="see-all-block">
+        <a href="./products.html"
+          ><div class="see-all-btn">
+            <p>Տեսնել ավելին</p>
+          </div></a
+        >
+      </div>
+      <div class="home-brands-heading">
+        <p>Հանրաճանաչ բրենդներ</p>
+      </div>
+      <div class="brand-logos">
+        <div class="brand-logo">
+          <a href="#">
+            <img src="./imgs/levis.svg" alt="" />
+          </a>
+        </div>
+
+        <div class="brand-logo">
+          <a href="#">
+            <img src="./imgs/adidas.svg" alt="" />
+          </a>
+        </div>
+        <div class="brand-logo">
+          <a href="#">
+            <img src="./imgs/puma.svg" alt="" />
+          </a>
+        </div>
+        <div class="brand-logo">
+          <a href="#">
+            <img src="./imgs/nike.svg" alt="" />
+          </a>
+        </div>
+        <div class="brand-logo">
+          <a href="#">
+            <img src="./imgs/tommy-hilfiger.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--container end-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./imgs/logo.svg" alt="" />
+        </div>
+        <div class="footer-container-inner">
+          <div class="footer-follow-us">
+            <p>Հետևեք մեզ</p>
+            <div class="footer-follow-logos">
+              <a
+                href="https://www.facebook.com/Alcantara-Online-Shop-113615977091634"
+                ><div class="footer-follow-logo">
+                  <img src="./imgs/facebook-square.svg" alt="" /></div
+              ></a>
+              <a href="https://www.instagram.com/alcantaraonlineshop/"
+                ><div class="footer-follow-logo">
+                  <img src="./imgs/instagram.svg" alt="" /></div
+              ></a>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>
+              2004-2020 © Alcantara.am - հագուստի, կոշիկի և աքսեսուարների նորաձև
+              առցանց խանութ: Բոլոր իրավունքները պաշտպանված են. Առաքում ողջ
+              հայաստանյան տարածքում: Համատեղելիության ստուգում
+            </p>
+          </div>
+          <div class="footer-contacts">
+            <p>Հետադարձ կապ</p>
+            <a href="tel:+37433710720"
+              ><div class="footer-tel">
+                <img src="./imgs/phone-call.svg" alt="" />
+                <p>+374 33 710-720</p>
+              </div></a
+            >
+            <a href="mailto:Alcantara@gmail.com"
+              ><div class="footer-mail">
+                <img src="./imgs/simple-email.svg" alt="" />
+                <p>Alcantara@gmail.com</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="visa-block">
+        <div class="visa-pic"><img src="./imgs/visa.svg" alt="" /></div>
+      </div>
+      <div class="mobile-footer-inner">
+        <div class="mobile-footer-block">
+          <a href="#">Մեր մասին</a>
+        </div>
+        <div class="mobile-footer-block">
+          <a href="#">Պամաններ եվ դրւթներ</a>
+        </div>
+        <div class="mobile-footer-block">
+          <a href="#">Վերադարձի պամաններ</a>
+        </div>
+        <div class="mobile-footer-contacts">
+          <div class="mobile-footer-contact">
+            <a href="tel:+37433710720"
+              ><div class="footer-tel">
+                <img src="./imgs/mobile/Icon-phone-call.svg" alt="" />
+                <p>+374 33 710-720</p>
+              </div></a
+            >
+          </div>
+          <div class="mobile-footer-contact">
+            <a href="mailto:Alcantara@gmail.com"
+              ><div class="footer-mail">
+                <img src="./imgs/mobile/simple-email.svg" alt="" />
+                <p>Alcantara@gmail.com</p>
+              </div></a
+            >
+          </div>
+        </div>
+        <div class="mobile-footer-social-media">
+          <a
+            href="https://www.facebook.com/Alcantara-Online-Shop-113615977091634"
+            ><div class="footer-follow-logo">
+              <img src="./imgs/mobile/ionic-logo-facebook.svg" alt="" /></div
+          ></a>
+          <a href="https://www.instagram.com/alcantaraonlineshop/"
+            ><div class="footer-follow-logo">
+              <img src="./imgs/mobile/feather-instagram.svg" alt="" /></div
+          ></a>
+        </div>
+        <div class="mobile-footer-visa">
+          <div class="mobile-footer-visa-ico">
+            <img src="./imgs/mobile/Icon-awesome-cc-visa.svg" alt="" />
+          </div>
+          <div class="mobile-footer-visa-ico">
+            <img src="./imgs/mobile/Icon-awesome-cc-mastercard.svg" alt="" />
+          </div>
+        </div>
+        <div class="mobile-footer-lang">
+          <p>Հայ</p>
+          <p>Рус</p>
+          <p>Eng</p>
+        </div>
+        <div class="mobile-footer-copyright">
+          <div class="mobile-copyright-ico">
+            <img src="./imgs/mobile/Group39.svg" alt="" />
+          </div>
+          <p>2020 Alcantara. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
