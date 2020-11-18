@@ -1,3 +1,13 @@
+$(document).ready(function () {
+    if ($("#main-frame")) {
+      $("#main-frame").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      });
+    }
+  });
+  
+
 const prodPicArr = document.querySelectorAll('.pp-prod-small-pic')
 let prodMainPic = document.querySelector('.pp-main-prod-pic')
 let frame = document.getElementById('main-frame')
