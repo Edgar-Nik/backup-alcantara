@@ -441,7 +441,13 @@
   -ms-transform: translate(-50%, -50%);
   display: none;
 }
+.pp-main-prod-pic .slick-next{
+  display: none !important;
+}
 
+.pp-main-prod-pic .slick-prev{
+  display: none !important;
+}
 .pp-main-prod-pic .video-play-btn {
   display: none;
 }
@@ -586,6 +592,11 @@
     margin-left: 0;
     justify-content: center;
     align-items: flex-start;
+    padding-bottom: 1rem;
+
+  }
+  .pp-main-prod-info-wrapper{
+    margin-top: 3rem;
   }
   .pp-main-prod-pic video {
     max-height: 37rem;
