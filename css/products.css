@@ -345,7 +345,7 @@
         margin: 0.2rem;
     }
     .products-container-inner {
-        margin: 0;
+        margin-top: 8rem;
     }
     .sortByDropdown {
         display: flex;

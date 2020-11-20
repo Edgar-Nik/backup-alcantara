@@ -165,7 +165,7 @@
 @media screen and (max-width: 500px) {
     .payment-block{
         width: 100%;
-        margin:0;
+        margin:6rem 0 0 0;
     }
     .payment-types{
         width: 100%;
@@ -184,6 +184,7 @@
     .cash-form{
         width: 100% ;
         margin: 0;
+        border-radius: .5rem;
     }
     .card-valid {
         flex-direction: column;
@@ -195,9 +196,22 @@
     }
     .card-valid1 input{
         width: 100% !important;
+     
     }
     .card-valid2 input {
         width: 100% !important;
+       
+    }
+    .payment-forms input{
+        border-radius: .4rem;
+    }
+    .payment-forms button{
+        border-radius: .4rem;
+
+    }
+    footer{
+        margin-top: 2rem;
+
     }
     
 }

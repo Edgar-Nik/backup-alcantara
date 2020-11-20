@@ -475,7 +475,7 @@
   height: 26rem;
   background: #fff;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -597,6 +597,9 @@
   }
   .pp-main-prod-info-wrapper{
     margin-top: 3rem;
+  }
+  .pp-main-prod-container{
+    margin-top: 12rem;
   }
   .pp-main-prod-pic video {
     max-height: 37rem;
