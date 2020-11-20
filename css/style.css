@@ -1108,9 +1108,9 @@ footer {
     -moz-border-radius: 0.7rem !important ;
     -webkit-border-radius: 0.7rem !important; */
   }
-  /* #small-banners {
-        display: none;
-    } */
+  #small-banners {
+        display: none!important;
+    }
   .small-banners {
     display: none;
     height: 5rem;
