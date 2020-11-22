@@ -137,42 +137,7 @@ if (backBtn) {
   });
 }
 
-// let searchInput = document.querySelector('#search');
 
-// if(searchInput ){
-//   var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
-//   var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
-
-//   var grammar = '#JSGF V1.0;'
-
-//   var recognition = new SpeechRecognition();
-//   var speechRecognitionList = new SpeechGrammarList();
-//   speechRecognitionList.addFromString(grammar, 1);
-//   recognition.grammars = speechRecognitionList;
-//   recognition.lang = 'en-US';
-//   recognition.interimResults = false;
-
-//   recognition.onresult = function(event) {
-//       var last = event.results.length - 1;
-//       var command = event.results[last][0].transcript;
-//       searchInput.value =  command ;
-
-//   };
-
-//   recognition.onspeechend = function() {
-//       recognition.stop();
-//   };
-
-//   recognition.onerror = function(event) {
-//       // message.textContent = 'Error occurred in recognition: ' + event.error;
-//   }
-
-//   document.querySelector('#mic').addEventListener('click', function(){
-//       recognition.start();
-
-//   });
-
-// }
 
 const loginBtn = document.querySelector("#login-btn");
 const loginPopup = document.querySelector(".user-login");
@@ -306,3 +271,102 @@ if (likeBtn.length > 1) {
 // }
 
 // setInterval(()=>{orderChanger()},5000)
+
+
+
+
+// let searchInput = document.querySelector('#search');
+
+// if(searchInput ){
+//   var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+//   var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
+
+//   var grammar = '#JSGF V1.0;'
+
+//   var recognition = new SpeechRecognition();
+//   var speechRecognitionList = new SpeechGrammarList();
+//   speechRecognitionList.addFromString(grammar, 1);
+//   recognition.grammars = speechRecognitionList;
+//   recognition.lang = 'en-US';
+//   recognition.interimResults = false;
+
+//   recognition.onresult = function(event) {
+//       var last = event.results.length - 1;
+//       var command = event.results[last][0].transcript;
+//       searchInput.value =  command ;
+
+//   };
+
+//   recognition.onspeechend = function() {
+//       recognition.stop();
+//       console.log(command)
+//   };
+
+//   recognition.onerror = function(event) {
+//       // message.textContent = 'Error occurred in recognition: ' + event.error;
+//   }
+
+//   document.querySelector('#mic').addEventListener('click', function(){
+//       recognition.start();
+      
+
+//   });
+
+// }
+
+
+let searchMobile = document.querySelector('#mobile-search');
+
+if(searchMobile ){
+  var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
+  var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList;
+
+  var grammar = '#JSGF V1.0;'
+
+  var recognition = new SpeechRecognition();
+  var speechRecognitionList = new SpeechGrammarList();
+  speechRecognitionList.addFromString(grammar, 1);
+  recognition.grammars = speechRecognitionList;
+  recognition.lang = 'en-US';
+  recognition.interimResults = false;
+
+  recognition.onresult = function(event) {
+      var last = event.results.length - 1;
+      var command = event.results[last][0].transcript;
+      searchMobile.value =  command ;
+
+  };
+
+  recognition.onspeechend = function() {
+      recognition.stop();
+  };
+
+  recognition.onerror = function(event) {
+      // message.textContent = 'Error occurred in recognition: ' + event.error;
+  }
+
+  document.querySelector('#micMobile').addEventListener('click', function(){
+      recognition.start();
+
+  });
+
+}
+
+
+//agree rules
+
+let agree = document.getElementById('agreeRules')
+let agreeBlock = document.querySelector('.agree-with-rules') 
+let registrBtn = document.getElementById('registrBtn')
+if(agree && agreeBlock){
+  if(!agree.checked){
+    registrBtn.disabled = true
+  }
+  agree.addEventListener('click',()=>{
+    if(!agree.checked){
+      registrBtn.disabled = true
+    }else{
+      registrBtn.disabled = false
+    }
+  })
+}

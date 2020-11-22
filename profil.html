@@ -89,8 +89,12 @@
                             placeholder="Password"
                         />
                     </div>
+                    <div class="agree-with-rules">
+                        <input id="agreeRules" type="checkbox" checked>
+                        <a href="#">Համաձայն եմ կանոններին</a>
+                      </div>
                     <div class="registr-btn-block">
-                        <button class="registr-btn" type="submit">
+                        <button id="registrBtn" class="registr-btn" type="submit">
                             Գրանցվել
                         </button>
                     </div>
@@ -182,12 +186,18 @@
                 <div class="mobile-search-block">
                     <form class="mobile-search-form" action="">
                         <div class="mobile-search-wrap">
-                            <input type="text" placeholder="Որոնել" />
-                            <button type="submit">
-                                <img src="./imgs/mobile/Search.svg" alt="" />
-                            </button>
+                          <input id="mobile-search" type="text" placeholder="Որոնել" />
+                          <button type="submit">
+                            <img src="./imgs/mobile/Search.svg" alt="" />
+                          </button>
+                          <div id="micMobile" class="mic mic-mobile">
+                            <img
+                                src="./imgs/mobile/mic_grey.svg"
+                                alt=""
+                            />
                         </div>
-                    </form>
+                        </div>
+                      </form>
                 </div>
             </div>
         </div>

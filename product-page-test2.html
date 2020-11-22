@@ -83,8 +83,12 @@
               placeholder="Password"
             />
           </div>
+          <div class="agree-with-rules">
+            <input id="agreeRules" type="checkbox" checked>
+            <a href="#">Համաձայն եմ կանոններին</a>
+          </div>
           <div class="registr-btn-block">
-            <button class="registr-btn" type="submit">Գրանցվել</button>
+            <button id="registrBtn" class="registr-btn" type="submit">Գրանցվել</button>
           </div>
         </form>
       </div>
@@ -174,10 +178,16 @@
         <div class="mobile-search-block">
           <form class="mobile-search-form" action="">
             <div class="mobile-search-wrap">
-              <input type="text" placeholder="Որոնել" />
+              <input id="mobile-search" type="text" placeholder="Որոնել" />
               <button type="submit">
                 <img src="./imgs/mobile/Search.svg" alt="" />
               </button>
+              <div id="micMobile" class="mic mic-mobile">
+                <img
+                    src="./imgs/mobile/mic_grey.svg"
+                    alt=""
+                />
+            </div>
             </div>
           </form>
         </div>
@@ -360,18 +370,25 @@
               </div>
             </div> -->
             <div id="main-frame" class="pp-main-prod-pic">
-              <img
+              <div class="image-wrapper">
+                <img
                 src="./imgs/products/8457699e-52a9-4961-afe0-812ac680a765_1.1baa2194f9c137c71bd73da6568675b6.jpeg"
                 alt=""
               />
+              </div>
+              <div class="image-wrapper">
+
               <img
                 src="./imgs/products/6dfa548d-4b38-4f1c-80a2-f67b3a0b402a_1.449056ef83c7c7446275df337f83e689.jpeg"
                 alt=""
               />
+              </div>
+              <div class="image-wrapper">
               <img
                 src="./imgs/products/5c76e635-c7fb-44e5-ab10-142922c462c2_1.0296d671b42421efde3e677ecb73cfad.jpeg"
                 alt=""
               />
+              </div>
               <video class="prod-video" controls>
                 <source src="./test-video/test-video2.mp4" type="video/mp4" />
               </video>
